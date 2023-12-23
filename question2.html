@@ -1,0 +1,130 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Christmas Quiz!</title>
+<link rel="stylesheet" href="mystylesheet.css" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>>
+
+</head>
+
+<body>
+
+
+
+
+<header>
+  <div>
+  <h2> Christmas Quiz </h2>
+	
+</header>
+
+
+
+<section>
+	  <div>
+		<p><img id="image1" src="christmaslights.GIF" alt="christmaslights" > </p>
+	  </div>
+	  
+	  <div>
+		<p><img id="image1" src="christmaslights.GIF" alt="christmaslights"> </p>
+	  </div>
+	  
+	  <div>
+		<p><img id="image1" src="christmaslights.GIF" alt="christmaslights"> </p>
+	  </div>
+
+</section>
+
+
+
+
+  <div id="navigation">
+ 
+	 <div>
+	 <p> <li><a href="index.html">Home</a></li> </p>
+	 </div>
+	  
+	 
+	 <div>
+	 <p> <li><a href="jokes.html">Jokes</a></li> </p>
+	 </div>
+	 
+	 <div>
+	 <p> <li><a href="quiz.html">Quiz</a></li> </p>
+	 </div>
+	 
+	 <div>
+	 <p> <li><a href="address.html">New address</a></li> </p>
+	 </div>
+ 
+</div>	
+
+
+
+
+
+
+
+
+<section>
+
+
+	 <article>
+		<h1>Happy Christmas!</h1>
+		<p>Becuase I can only know simple code you need to wait 8-9 seconds before you can answer the question. <br> Good Luck! </p>
+
+	 </article>
+	 
+	<article>
+	
+		
+		<div id="q" style="text-align: left;">The story of Jesus' birth is told in the Gospels of Matthew and John.</div>
+		   
+		<button py-click="question(True)" id="A1">True</button>
+		<div id="A1a" style="text-align: left;"></div>
+		
+		<button py-click="question(False)" id="A2">False</button>
+		<div id="A1b" style="text-align: left;"></div>
+		
+		<div id="output" style="text-align: center;"></div>
+
+		<br>
+		
+		<hr />
+		
+		<button> <a style="color: black;" href="question3.html">Next Question </a> </button>
+	</article>
+	 
+	 
+	<img id="image2" src="babyjesus.JPG" alt="babyjesus">
+		
+
+
+</section>
+
+</body>
+
+<py-script style= "visibility: hidden;" >
+
+
+def question(answer):
+	output_div = Element("output")
+	if str(answer) == "True":
+		output_div.element.innerText = "Sorry, incorrect. It is in Matthew and Luke."
+	else:
+		output_div.element.innerText = "Correct! It is in Matthew and Luke."
+		
+
+		
+
+</py-script>
+
+
+
+
+</html>
+
+
